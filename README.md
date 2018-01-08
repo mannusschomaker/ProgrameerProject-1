@@ -16,6 +16,7 @@ participating in the Olympics changed, which country improved and which country'
 # Prerequisites
 
 - Data scource:
+Data: https://www.theguardian.com/sport/datablog/2012/jun/25/olympic-medal-winner-list-data#data
 eerste plek op spelen: https://www.olympic.org/olympic-results data moet waarschijnlijk gescraped worden
 medal table: https://en.wikipedia.org/wiki/2016_Summer_Olympics_medal_table scrapen of met excel
 doping: https://en.wikipedia.org/wiki/Doping_at_the_Olympic_Games scrapen of met excel
@@ -28,7 +29,7 @@ d3 tip needs to be used and maybe a library for maps
 there is a site that represents the medals won by country's over years, but this one uses bubles and is not interactive, also there
 is no linked graph http://rio2016.thegamma.net/
 
-else where they have a different visualization but once again very different http://www.nytimes.com/interactive/2008/08/04/sports/olympics/20080804_MEDALCOUNT_MAP.html
+  elsewhere they have a different visualization but once again very different http://www.nytimes.com/interactive/2008/08/04/sports/olympics/20080804_MEDALCOUNT_MAP.html
 
 - hardest parts:
 staying sane when the code does not work
