@@ -4,6 +4,8 @@ participating in the Olympics changed, which country improved and which country'
 
 # Solution
 
+[alt text]("doc/country's.png")
+
 - a website that gives a visualisation of various Olympic results through the years and the medals won by country's through the years
 
 - MAIN FEATURES: dropdown menu to select a sport and gender, interactive graph that shows the results through the years
