@@ -3,8 +3,10 @@ how impressive these people are and how they compare to their predecessors. also
 participating in the Olympics changed, which country improved and which country's lost their golden touch
 
 # Solution
-
+![alt text](doc/Home page.png)
+![alt text](doc/sports.png)
 ![alt text](doc/country's.png)
+![alt text](doc/doping (optional).png)
 
 - a website that gives a visualisation of various Olympic results through the years and the medals won by country's through the years
 
