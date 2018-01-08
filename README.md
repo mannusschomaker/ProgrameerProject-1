@@ -19,7 +19,9 @@ participating in the Olympics changed, which country improved and which country'
 Data: https://www.theguardian.com/sport/datablog/2012/jun/25/olympic-medal-winner-list-data#data
 eerste plek op spelen: https://www.olympic.org/olympic-results data moet waarschijnlijk gescraped worden
 medal table: https://en.wikipedia.org/wiki/2016_Summer_Olympics_medal_table scrapen of met excel
+
 doping: https://en.wikipedia.org/wiki/Doping_at_the_Olympic_Games scrapen of met excel
+
 doping: https://sportsanddrugs.procon.org/view.resource.php?resourceID=004420 with hand
 
 - external components:
