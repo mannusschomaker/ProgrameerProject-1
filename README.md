@@ -10,8 +10,25 @@ participating in the Olympics changed, which country improved and which country'
   with a tooltip.
   a map of the world where the country's are coloured with corresponding to the amount of medals won, with a tooltip and a graph linked to it.
   a slider can be used to update the map
-  *optionally* the amount of people cought for using doping and which doping are represented in a graph
+
+  *optionally the amount of people cought for using doping and which doping are represented in a graph*
 
 # Prerequisites
 
-- 
+- Data scource:
+eerste plek op spelen: https://www.olympic.org/olympic-results data moet waarschijnlijk gescraped worden
+medal table: https://en.wikipedia.org/wiki/2016_Summer_Olympics_medal_table scrapen of met excel
+doping: https://en.wikipedia.org/wiki/Doping_at_the_Olympic_Games scrapen of met excel
+doping: https://sportsanddrugs.procon.org/view.resource.php?resourceID=004420 with hand
+
+- external components:
+d3 tip needs to be used and maybe a library for maps
+
+- similar:
+there is a site that represents the medals won by country's over years, but this one uses bubles and is not interactive, also there
+is no linked graph http://rio2016.thegamma.net/
+
+else where they have a different visualization but once again very different http://www.nytimes.com/interactive/2008/08/04/sports/olympics/20080804_MEDALCOUNT_MAP.html
+
+- hardest parts
+i think the scraping/getting data will take a lot of time
