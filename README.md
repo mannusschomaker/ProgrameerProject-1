@@ -4,7 +4,7 @@ participating in the Olympics changed, which country improved and which country'
 
 # Solution
 
-- a website that gives a visualisation of various Olympic results through the years
+- a website that gives a visualisation of various Olympic results through the years and the medals won by country's through the years
 
 - MAIN FEATURES: dropdown menu to select a sport and gender, interactive graph that shows the results through the years
   with a tooltip.
@@ -30,5 +30,7 @@ is no linked graph http://rio2016.thegamma.net/
 
 else where they have a different visualization but once again very different http://www.nytimes.com/interactive/2008/08/04/sports/olympics/20080804_MEDALCOUNT_MAP.html
 
-- hardest parts
-i think the scraping/getting data will take a lot of time
+- hardest parts:
+staying sane when the code does not work
+I think the scraping/getting data will take a lot of time
+the hardest part will be linking the dropdown menus with the graph and the slider with the map and the map with the graph
