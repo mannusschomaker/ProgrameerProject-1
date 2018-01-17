@@ -3,7 +3,7 @@ mainly focussed on fixing bugs coming from DATA MAPS (map format i use). additio
 
 #day 2
 inplemented the stacked barchart, it represents data of the top x country's of the selected year
-![alt text](doc/dat2barchart.png)
+![alt text](doc/day2barchart.png)
 i have yet to decide how many country's i wil represent, but i think it will be 10.
 maybe i will add a function where the country on the maps can be selected and will be added in the barchart
 
