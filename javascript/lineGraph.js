@@ -59,15 +59,25 @@ d3.csv(str, function(error, data) {
         .key(function(d) {return d.medal;})
         .entries(data);
 
-    var color = d3.scale.category10();  // set the colour scale
+    function color(medal){
+      if (medal == "Gold"){
+        return "#ffd700"
+      }
+      if (medal == "Silver"){
+        return "#c0c0c0"
+      }
+      if (medal == "Bronze"){
+        return "#cd7f32"
+      }
+    }  // set the colour scale
 
     // Loop through each medal / key
     dataNest.forEach(function(d) {
 
         svg.append("path")
             .attr("class", "line")
-            .style("stroke", function() { // Add dynamically
-                return d.color = color(d.key); })
+            .style("stroke", function() {console.log(d.key); // Add dynamically
+                return color(d.key); })
             .attr("d", amountline(d.values));
 
     });

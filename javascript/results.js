@@ -22,7 +22,7 @@ currentYear = "s2012"
 
 
 
-function myFunction() {
+function boxUpdate() {
     var checkBox = document.getElementById("togBtnWS");
     var text = document.getElementById("checker");
     if (checkBox.checked == true) {

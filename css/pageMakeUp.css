@@ -10,17 +10,17 @@
     width: 60%;
     float: left;
     padding: 15px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .barChart {
     width: 40%;
     float: left;
     padding: 15px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .lineGraph {
     width: 40%;
     float: left;
     padding: 15px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
