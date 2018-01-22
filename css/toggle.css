@@ -1,0 +1,79 @@
+.switchWS {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 34px;
+}
+
+.switchWS input {display:none;}
+
+.sliderWS {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff4e50;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderWS:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderWS {
+  background-color: #ACE4EA;
+}
+
+input:focus + .sliderWS {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sliderWS:before {
+  -webkit-transform: translateX(105px);
+  -ms-transform: translateX(105px);
+  transform: translateX(105px);
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+  display: none;
+}
+
+.on, .off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .sliderWS .on
+{display: block;}
+
+input:checked + .sliderWS .off
+{display: none;}
+
+/*--------- END --------*/
+
+/* Rounded sliderWSs */
+.sliderWS.round {
+  border-radius: 34px;
+}
+
+.sliderWS.round:before {
+  border-radius: 50%;}

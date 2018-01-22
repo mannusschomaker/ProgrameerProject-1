@@ -136,6 +136,9 @@ function barChart(data) {
 
           d3.select("." + mapId).style("fill", "blue").attr("id", "highLight")
             tooltip.style("display", null);
+          // d3.select(".map").style("opacity", 0.5)
+          // d3.select("." + mapId).style("opacity", 2)
+          // d3.select("")
 
         })
         .on("mouseout", function() {
@@ -146,6 +149,7 @@ function barChart(data) {
 
             // remove highLight
             d3.select("#highLight").style("fill", mapFill).attr("id", null)
+            // d3.select(".datamap").style("opacity",1)
         })
         .on("mousemove", function(d) {
 

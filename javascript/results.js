@@ -1,6 +1,29 @@
 summer = true
+bars = 10
+currentYear = "s2012"
+// function dropdownFunction() {
+//     document.getElementById("myDropdown1").classList.toggle("show");
+// }
+//
+// // close the dropdown menu if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn1')) {
+//
+//     var dropdowns = document.getElementsByClassName("dropdown-content1");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// };
+
+
+
 function myFunction() {
-    var checkBox = document.getElementById("myCheck");
+    var checkBox = document.getElementById("togBtnWS");
     var text = document.getElementById("checker");
     if (checkBox.checked == true) {
         text.style.display = "block";
@@ -19,6 +42,23 @@ function myFunction() {
 }
 
 window.onload = function() {
+
+  d3.selectAll(".m")
+  .on("click", function() {
+    var bars1 = this.getAttribute("value");
+    // var test = document.getElementsByID("#bestText");
+    // test[0].innerHTML = "<h1>" + "best " + bars +" country's (based on gold medals)" + "</h1>";
+    updatebars(bars1)
+    makeMap(currentYear)
+    // var test = document.getElementsById("bestText");
+    // console.log(test);
+    // test[0].innerHTML = "<h1>" + "best " + bars +" country's (based on gold medals)" + "</h1>";
+
+  })
+
+  function updatebars(bars1){
+    bars = bars1
+  }
 
     // document.getElementById("winterSlider").setAttribute("step", 2)
     // console.log(document.getElementById("winterSlider").getAttribute("step"))
@@ -55,7 +95,7 @@ window.onload = function() {
         }
     });
 
-    makemap("s2012")
+    makeMap(currentYear)
 
     if (summer = true) {
         // make a slider
@@ -66,7 +106,8 @@ window.onload = function() {
         // update values of slider
         slider.oninput = function() {
             output.innerHTML = this.value;
-            makemap("s" + this.value)
+            currentYear = "s" + this.value
+            makeMap(currentYear)
         }
     }
     if (summer != false) {
@@ -85,12 +126,14 @@ window.onload = function() {
             // if (this.value != 1992){
             //   document.getElementById("winterSlider").setAttribute("step", 4)
             // }
-            makemap("w" + this.value)
+            currentYear = "w" + this.value
+            makeMap(currentYear)
         }
     }
     // d3.select(".conatainter").style("fill", blue)
 
-    function makemap(year) {
+    function makeMap(year) {
+
         // reset data of map
         map.updateChoropleth(null, {
             reset: true
@@ -108,12 +151,13 @@ window.onload = function() {
             var updateCountry = {}
             var updateCountry2 = {}
             var Country = null
-
+            console.log(bars);
             // data pre-processing
             data.forEach(function(d) {
 
+
               // get best n country's
-              if (count < 11){
+              if (count < bars){
                 bestCountry = {
                   Country: d.Country,
                   Gold: d.Gold,
@@ -172,9 +216,6 @@ window.onload = function() {
             map.updateChoropleth(
                 updateCountry
             );
-
-
-
         });
     };
 }

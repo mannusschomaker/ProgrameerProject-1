@@ -13,3 +13,7 @@ map
 ![alt text](doc/interactiveBarMap.png)
 when a country on the map is clicked, a linegraph giving the olympic history of that country is shown
 ![alt text](doc/lineGraph.png)
+
+#day4
+due to the weather there was not very much progress, i added a dropdown menu which can be used to select the amount of top country in the stackedbarchart. additionally a fixed some bugs and added some data
+![alt text](doc/dropdownmenu.png)
