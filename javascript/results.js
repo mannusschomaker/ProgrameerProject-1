@@ -55,13 +55,9 @@ window.onload = function() {
   d3.selectAll(".m")
   .on("click", function() {
     var bars1 = this.getAttribute("value");
-    // var test = document.getElementsByID("#bestText");
-    // test[0].innerHTML = "<h1>" + "best " + bars +" country's (based on gold medals)" + "</h1>";
+    
     updatebars(bars1)
     makeMap(currentYear)
-    // var test = document.getElementsById("bestText");
-    // console.log(test);
-    // test[0].innerHTML = "<h1>" + "best " + bars +" country's (based on gold medals)" + "</h1>";
 
   })
 
@@ -168,7 +164,6 @@ window.onload = function() {
             var updateCountry = {}
             var updateCountry2 = {}
             var Country = null
-            console.log(bars);
             // data pre-processing
             data.forEach(function(d) {
 
@@ -199,14 +194,6 @@ window.onload = function() {
 
             });
             var arr = Object.keys(topBestCountry).map(function (key) { return topBestCountry[key]; });
-
-            // console.log("topthree", arr);
-            // console.log(arr[1]);
-            // console.log("test", nodata[1]);
-
-
-            // var x = document.getElementsByClassName("barChart");
-            // x[0].innerHTML = "first: " + topThreeCountry[1][0] + " second: " + topThreeCountry[1][1] + " third: " + topThreeCountry[1][2]
 
             color = d3.scale.linear().domain([0, maxValue])
                 .range([d3.rgb('#551111'), d3.rgb("#ff0000")]);
