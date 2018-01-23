@@ -1,3 +1,5 @@
+https://github.com/minordavid/ProgrameerProject/blob/master/results.html
+
 we hear a lot about how top athletes are improving and about new records, however we do not fully understand
 how impressive these people are and how they compare to their predecessors. also it is nice to see how the country's
 participating in the Olympics changed, which country improved and which country's lost their golden touch
