@@ -1,74 +1,75 @@
-United States (USA)	36	39	26	101
- China (CHN)	32	17	14	63
- Russia (RUS)	28	26	36	90
- Australia (AUS)	17	16	17	50
- Japan (JPN)	16	9	12	37
- Germany (GER)	13	16	20	49
- France (FRA)	11	9	13	33
- Italy (ITA)	10	11	11	32
- South Korea (KOR)	9	12	9	30
- Great Britain (GBR)	9	9	12	30
- Cuba (CUB)	9	7	11	27
- Hungary (HUN)	8	6	3	17
- Ukraine (UKR)	8	5	9	22
- Romania (ROU)	8	5	6	19
- Greece (GRE)*	6	6	4	16
- Brazil (BRA)	5	2	3	10
- Norway (NOR)	5	0	1	6
- Netherlands (NED)	4	9	9	22
- Sweden (SWE)	4	2	1	7
- Spain (ESP)	3	11	6	20
- Canada (CAN)	3	6	3	12
- Turkey (TUR)	3	3	5	11
- Poland (POL)	3	2	5	10
- New Zealand (NZL)	3	2	0	5
- Thailand (THA)	3	1	4	8
- Belarus (BLR)	2	5	6	13
- Austria (AUT)	2	4	1	7
- Ethiopia (ETH)	2	3	2	7
- Iran (IRI)	2	2	2	6
- Slovakia (SVK)	2	2	2	6
- Chinese Taipei (TPE)	2	2	1	5
- Georgia (GEO)	2	2	0	4
- Bulgaria (BUL)	2	1	9	12
- Denmark (DEN)	2	1	5	8
- Jamaica (JAM)	2	1	2	5
- Uzbekistan (UZB)	2	1	2	5
- Morocco (MAR)	2	1	0	3
- Argentina (ARG)	2	0	4	6
- Chile (CHI)	2	0	1	3
- Kazakhstan (KAZ)	1	4	3	8
- Kenya (KEN)	1	4	2	7
- Czech Republic (CZE)	1	3	5	9
- South Africa (RSA)	1	3	2	6
- Croatia (CRO)	1	2	2	5
- Lithuania (LTU)	1	2	0	3
- Egypt (EGY)	1	1	3	5
- Switzerland (SUI)	1	1	3	5
- Indonesia (INA)	1	1	2	4
- Zimbabwe (ZIM)	1	1	1	3
- Azerbaijan (AZE)	1	0	4	5
- Belgium (BEL)	1	0	2	3
- Bahamas (BAH)	1	0	1	2
- Israel (ISR)	1	0	1	2
- Cameroon (CMR)	1	0	0	1
- Dominican Republic (DOM)	1	0	0	1
- United Arab Emirates (UAE)	1	0	0	1
- North Korea (PRK)	0	4	1	5
- Latvia (LAT)	0	4	0	4
- Mexico (MEX)	0	3	1	4
- Portugal (POR)	0	2	1	3
- Finland (FIN)	0	2	0	2
- Serbia and Montenegro (SCG)	0	2	0	2
- Slovenia (SLO)	0	1	3	4
- Estonia (EST)	0	1	2	3
- Hong Kong (HKG)	0	1	0	1
- India (IND)	0	1	0	1
- Paraguay (PAR)	0	1	0	1
- Colombia (COL)	0	0	2	2
- Nigeria (NGR)	0	0	2	2
- Venezuela (VEN)	0	0	2	2
- Eritrea (ERI)	0	0	1	1
- Mongolia (MGL)	0	0	1	1
- Syria (SYR)	0	0	1	1
- Trinidad and Tobago (TRI)	0	0	1	1
+Country,Gold,Silver,Bronze,Total
+USA,36,39,26,101
+CHN,32,17,14,63
+RUS,28,26,36,90
+AUS,17,16,17,50
+JPN,16,9,12,37
+DEU,13,16,20,49
+FRA,11,9,13,33
+ITA,10,11,11,32
+KOR,9,12,9,30
+GBR,9,9,12,30
+CUB,9,7,11,27
+HUN,8,6,3,17
+UKR,8,5,9,22
+ROU,8,5,6,19
+GRE,6,6,4,16
+BRA,5,2,3,10
+NOR,5,0,1,6
+NED,4,9,9,22
+SWE,4,2,1,7
+ESP,3,11,6,20
+CAN,3,6,3,12
+TUR,3,3,5,11
+POL,3,2,5,10
+NZL,3,2,0,5
+THA,3,1,4,8
+BLR,2,5,6,13
+AUT,2,4,1,7
+ETH,2,3,2,7
+IRI,2,2,2,6
+SVK,2,2,2,6
+TPE,2,2,1,5
+GEO,2,2,0,4
+BUL,2,1,9,12
+DEN,2,1,5,8
+JAM,2,1,2,5
+UZB,2,1,2,5
+MAR,2,1,0,3
+ARG,2,0,4,6
+CHI,2,0,1,3
+KAZ,1,4,3,8
+KEN,1,4,2,7
+CZE,1,3,5,9
+RSA,1,3,2,6
+CRO,1,2,2,5
+LTU,1,2,0,3
+EGY,1,1,3,5
+SUI,1,1,3,5
+INA,1,1,2,4
+ZIM,1,1,1,3
+AZE,1,0,4,5
+BEL,1,0,2,3
+BAH,1,0,1,2
+ISR,1,0,1,2
+CMR,1,0,0,1
+DOM,1,0,0,1
+UAE,1,0,0,1
+PRK,0,4,1,5
+LAT,0,4,0,4
+MEX,0,3,1,4
+POR,0,2,1,3
+FIN,0,2,0,2
+SCG,0,2,0,2
+SLO,0,1,3,4
+EST,0,1,2,3
+HKG,0,1,0,1
+IND,0,1,0,1
+PAR,0,1,0,1
+COL,0,0,2,2
+NGR,0,0,2,2
+VEN,0,0,2,2
+ERI,0,0,1,1
+MGL,0,0,1,1
+SYR,0,0,1,1
+TRI,0,0,1,1

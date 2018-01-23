@@ -1,6 +1,11 @@
 summer = true
 bars = 10
 currentYear = "s2012"
+summerYear = [1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960, 1964,
+              1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016]
+winterYear = [1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976, 1980, 1984, 1988,
+              1992, 1994, 1998, 2002, 2006, 2010, 2014, 2018]
+console.log(winterYear.length);
 // function dropdownFunction() {
 //     document.getElementById("myDropdown1").classList.toggle("show");
 // }
@@ -25,12 +30,16 @@ currentYear = "s2012"
 function boxUpdate() {
     var checkBox = document.getElementById("togBtnWS");
     var text = document.getElementById("checker");
+    console.log(checkBox.checked)
     if (checkBox.checked == true) {
         text.style.display = "block";
         summer = false
         // show the correct slider
         document.getElementById("winterSlider").style.display = "block"
         document.getElementById("summerSlider").style.display = "none"
+        console.log("winter");
+        // makeMap(currentWinterYear)
+        // """makemap(current)"""
 
     } else {
         text.style.display = "none";
@@ -84,6 +93,13 @@ window.onload = function() {
         },
         geographyConfig: {
             popupTemplate: function(geo, data) {
+              if (data.total == null){
+                return ['<div class="hoverinfo"><strong>',
+                    geo.properties.name,
+                    '</strong><br></br><strong>', 'No medals won',
+                    '</strong></div>'].join('');
+              }
+              else{
                 return ['<div class="hoverinfo"><strong>',
                     geo.properties.name,
                     '</strong><br></br><strong>', 'Total: ', data.total,
@@ -91,6 +107,7 @@ window.onload = function() {
                     '</strong><br></br><strong>', 'Silver: ', data.silver,
                     '</strong><br></br><strong>', 'Bronze: ', data.bronze, '</strong></div>'
                 ].join('');
+              }
             }
         }
     });
@@ -101,32 +118,32 @@ window.onload = function() {
         // make a slider
         var slider = document.getElementById("summerSlider");
         var output = document.getElementById("demo");
-        output.innerHTML = slider.value;
+        output.innerHTML = summerYear[slider.value];
+        currentSummerYear = "s" + summerYear[slider.value]
 
         // update values of slider
         slider.oninput = function() {
-            output.innerHTML = this.value;
-            currentYear = "s" + this.value
+            output.innerHTML = summerYear[this.value];
+            currentYear = "s" + summerYear[this.value]
+            currentSummerYear = "s" + summerYear[slider.value]
             makeMap(currentYear)
         }
     }
     if (summer != false) {
         var slider = document.getElementById("winterSlider");
         var output = document.getElementById("demo");
-        output.innerHTML = slider.value;
+        output.innerHTML = winterYear[slider.value];
+        currentWinterYear = "s" + winterYear[slider.value]
 
         // document.getElementById("winterSlider").setAttribute("step", 2)
 
         // update values of slider
         slider.oninput = function() {
-            output.innerHTML = this.value;
-            // if (this.value == 1992){
-            //   document.getElementById("winterSlider").setAttribute("step", 2)
-            // }
-            // if (this.value != 1992){
-            //   document.getElementById("winterSlider").setAttribute("step", 4)
-            // }
-            currentYear = "w" + this.value
+            output.innerHTML = winterYear[this.value];
+
+            currentYear = "w" + winterYear[this.value]
+            currentWinterYear = "s" + winterYear[slider.value]
+
             makeMap(currentYear)
         }
     }

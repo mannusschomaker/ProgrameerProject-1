@@ -1,17 +1,18 @@
-East Germany (GDR)	9	9	6	24
- Soviet Union (URS)	6	10	9	25
- United States (USA)	4	4	0	8
- Finland (FIN)	4	3	6	13
- Sweden (SWE)	4	2	2	8
- Norway (NOR)	3	2	4	9
- Switzerland (SUI)	2	2	1	5
- Canada (CAN)	2	1	1	4
- West Germany (FRG)	2	1	1	4
- Italy (ITA)	2	0	0	2
- Great Britain (GBR)	1	0	0	1
- Czechoslovakia (TCH)	0	2	4	6
- France (FRA)	0	1	2	3
- Japan (JPN)	0	1	0	1
- Yugoslavia (YUG)*	0	1	0	1
- Liechtenstein (LIE)	0	0	2	2
- Austria (AUT)	0	0	1	1
+Country,Gold,Silver,Bronze,Total
+GDR,9,9,6,24
+URS,6,10,9,25
+USA,4,4,0,8
+FIN,4,3,6,13
+SWE,4,2,2,8
+NOR,3,2,4,9
+SUI,2,2,1,5
+CAN,2,1,1,4
+FRG,2,1,1,4
+ITA,2,0,0,2
+GBR,1,0,0,1
+TCH,0,2,4,6
+FRA,0,1,2,3
+JPN,0,1,0,1
+YUG,0,1,0,1
+LIE,0,0,2,2
+AUT,0,0,1,1

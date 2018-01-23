@@ -1,13 +1,14 @@
-Soviet Union (URS)	7	3	6	16
- Austria (AUT)	4	3	4	11
- Finland (FIN)	3	3	1	7
- Switzerland (SUI)	3	2	1	6
- Sweden (SWE)	2	4	4	10
- United States (USA)	2	3	2	7
- Norway (NOR)	2	1	1	4
- Italy (ITA)	1	2	0	3
- United Team of Germany (EUA)	1	0	1	2
- Canada (CAN)	0	1	2	3
- Japan (JPN)	0	1	0	1
- Hungary (HUN)	0	0	1	1
- Poland (POL)	0	0	1	1
+Country,Gold,Silver,Bronze,Total
+URS,7,3,6,16
+AUT,4,3,4,11
+FIN,3,3,1,7
+SUI,3,2,1,6
+SWE,2,4,4,10
+USA,2,3,2,7
+NOR,2,1,1,4
+ITA,1,2,0,3
+EUA,1,0,1,2
+CAN,0,1,2,3
+JPN,0,1,0,1
+HUN,0,0,1,1
+POL,0,0,1,1

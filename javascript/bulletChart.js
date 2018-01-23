@@ -136,7 +136,13 @@ function barChart(data) {
 
           d3.select("." + mapId).style("fill", "blue").attr("id", "highLight")
             tooltip.style("display", null);
-          // d3.select(".map").style("opacity", 0.5)
+          // test = d3.selectAll(".datamaps-subunit")
+          // console.log(test);
+          // console.log(test.attr("class"));
+          //
+          // test[0].forEach(function(d){
+          //   d3.select(d.attr("class")).style("opacity", 0.5)
+          // })
           // d3.select("." + mapId).style("opacity", 2)
           // d3.select("")
 
