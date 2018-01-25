@@ -1,0 +1,33 @@
+
+body { font: 12px Arial;}
+
+path {
+    stroke: steelblue;
+    stroke-width: 20;
+    fill: none;
+}
+.axis path,
+.axis text{
+  font-size: 15px;
+  font-family: serif;
+}
+path,
+#tempLine{
+  stroke: steelblue;
+  stroke-width: 3;
+  fill: none;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 3;
+    shape-rendering: crispEdges;
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: grey;
+        stroke-width: 3;
+        shape-rendering: crispEdges;
+    }

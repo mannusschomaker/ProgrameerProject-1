@@ -29,3 +29,17 @@ got some idea's from the presentations
 the sliders of the years have been changed to only contain the years the olympics happendend and not when thy were skipped (examples: 1940, 1944, 1948). i decided to make the slider linear over the years that the Olympics took place.
 
 the toggle to choose between summer and winter is now styled and fully functional
+
+# day 7
+
+lines in Line graph are continuous, when a country did not compete for a year in between this is shown as an intermediate between the previous and next time they participated.
+
+the lines are between the latest and earliest time a country competed.
+
+# day 8
+
+when hovering the stacked bar chart dotted lines representing the history of that country are added in the line graph
+
+i choose to do this relative and not absolute
+
+# day 9

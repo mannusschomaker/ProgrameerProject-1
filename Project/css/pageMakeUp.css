@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+.datamap { background: #d3eaf8; }
+.header {
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+.map {
+    width: 60%;
+    float: left;
+    padding: 15px;
+    /* border: 1px solid black; */
+}
+.barChart {
+    width: 40%;
+    float: left;
+    padding: 15px;
+    /* border: 1px solid black; */
+}
+.lineGraph {
+    width: 40%;
+    float: left;
+    padding: 15px;
+    /* border: 1px solid black; */
+}
