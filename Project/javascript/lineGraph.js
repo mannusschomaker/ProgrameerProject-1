@@ -2,11 +2,8 @@ function lineGraph(selectedCountry){
 
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 20, bottom: 30, left: 50},
-    width = 600 - margin.left - margin.right,
+    width = 550 - margin.left - margin.right,
     height = 270 - margin.top - margin.bottom;
-
-// Parse the year / time
-// var parseyear = d3.time.format("%b %Y").parse;
 
 // Set the ranges
 var x = d3.time.scale().range([0, width]);
@@ -38,15 +35,16 @@ var svg = d3.select(".lineGraph")
 // selectedCountry
 // Get the data
 str = "DataLineGraph/" + selectedCountry + ".csv"
-d3.csv(str, function(error, data) {
+d3.csv(str, function(error, rawData) {
 
-  //
-  // if (data == undefined){
-  //   console.log("hoi");
-  // }
-    // if (data == null){
-    //   console.log();
-    // }
+  var data = [];
+  rawData.forEach(function(d){
+    if (d.year != undefined){
+
+      data.push(d)
+    }
+  })
+
     data.forEach(function(d) {
 		d.amount = +d.amount;
     });
@@ -56,6 +54,7 @@ d3.csv(str, function(error, data) {
     y.domain([0, d3.max(data, function(d) { return d.amount; })]);
 
     // Nest the entries by medal
+
     var dataNest = d3.nest()
         .key(function(d) {return d.medal;})
         .entries(data);
@@ -76,7 +75,7 @@ d3.csv(str, function(error, data) {
         svg.append("path")
             .attr("class", "line")
             .style("stroke-width", 5)
-            .style("stroke", function() {console.log(d.key); // Add dynamically
+            .style("stroke", function() { // Add dynamically
                 return color(d.key); })
             .attr("d", amountline(d.values));
 
@@ -121,18 +120,22 @@ function updateLine(selectedCountry){
       .append("g")
           .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
-  console.log(svg);
+
 
 
   // selectedCountry
   // Get the data
   str = "DataLineGraph/" + selectedCountry + ".csv"
-  d3.csv(str, function(error, data) {
-    console.log(data);
-      if (data == null){
-        console.log("hoi");
-        return
+  d3.csv(str, function(error, rawData) {
+
+    var data = [];
+    rawData.forEach(function(d){
+      if (d.year != undefined){
+        data.push(d)
       }
+    })
+
+
       data.forEach(function(d) {
   		d.amount = +d.amount;
       });
@@ -166,7 +169,7 @@ function updateLine(selectedCountry){
               .attr("class", "line")
               .style("opacity", 0.9)
               .style("stroke-dasharray", ("2, 2"))
-              .style("stroke", function() {console.log(d.key); // Add dynamically
+              .style("stroke", function() { // Add dynamically
                   return color(d.key); })
               .attr("d", amountline(d.values));
 

@@ -17,7 +17,7 @@ function makeMap(year) {
         var updateCountry = {}
         var updateCountry2 = {}
         var Country = null
-        console.log(bars);
+        // console.log(bars);
         // data pre-processing
         data.forEach(function(d) {
 
@@ -34,15 +34,14 @@ function makeMap(year) {
             count += 1
           }
 
-
-
             d.Gold = +d["Gold"];
             d.Silver = +d["Silver"];
             d.Bronze = +d["Bronze"];
             d.Total = +d["Total"];
 
             if (maxValue < d.Total) {
-                maxValue = d.Total
+                maxValue = 3 * d.Gold + 2 * d.Silver + 1 * d.Bronze
+                // maxValue = d.Total
             }
 
 
@@ -57,13 +56,14 @@ function makeMap(year) {
         // var x = document.getElementsByClassName("barChart");
         // x[0].innerHTML = "first: " + topThreeCountry[1][0] + " second: " + topThreeCountry[1][1] + " third: " + topThreeCountry[1][2]
 
-        color = d3.scale.linear().domain([0, maxValue])
+        color = d3.scale.linear().domain([0, Math.log10(maxValue)])
             .range([d3.rgb('#551111'), d3.rgb("#ff0000")]);
 
         // make json of country with information
         data.forEach(function(d) {
+          score = 3 * d.Gold + 2 * d.Silver + 1 * d.Bronze
             infoCountry = {
-                fillColor: color(d.Total),
+                fillColor: color(Math.log10(score)),
                 total: d.Total,
                 gold: d.Gold,
                 silver: d.Silver,

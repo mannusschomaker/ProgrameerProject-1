@@ -1,10 +1,16 @@
 * {
     box-sizing: border-box;
 }
-.datamap { background: #d3eaf8; }
-.header {
-    /* border: 1px solid black; */
-    padding: 15px;
+/* .datamap { } */
+/* #currentGraph{
+  width: 100%;
+  float: left;
+} */
+.datamap{
+  width: 100%;
+  float: left;
+  padding: 15px;
+  background: #d3eaf8;
 }
 .map {
     width: 60%;

@@ -4,6 +4,7 @@ var summer = true
 var bars = 10
 var currentYear = "s2012"
 var selectedCountry = "sUSA"
+var clickCountry = "USA"
 
 // set constants
 const summerYear = [1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960, 1964,
@@ -32,8 +33,7 @@ function boxUpdate() {
         // update everything
         makeMap(currentWinterYear)
         d3.select("#currentGraph").remove()
-        console.log(selectedCountry);
-        lineGraph(selectedCountry)
+        lineGraph("w" + clickCountry)
 
         // set the right year
         var output = document.getElementById("demo");
@@ -51,9 +51,8 @@ function boxUpdate() {
         output.innerHTML = summerToggle;
         makeMap(currentSummerYear)
         d3.select("#currentGraph").remove()
-        console.log(selectedCountry);
 
-        lineGraph(selectedCountry)
+        lineGraph("s" + clickCountry)
     }
 }
 
@@ -64,7 +63,7 @@ window.onload = function() {
         .on("click", function() {
             var bars = this.getAttribute("value");
 
-            // update the bars (don't know why it won't work without this)
+            // update the bars (don't know why it won't work without this, neither did tim)
             updatebars(bars)
 
             // update
@@ -88,7 +87,7 @@ window.onload = function() {
             datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
                 var x = document.getElementsByClassName("text");
                 x[0].innerHTML = "<h1>" + "Olympic history of " + geography.properties.name + "</h1>";
-                var clickCountry = geography.id
+                clickCountry = geography.id
                 d3.select("#currentGraph").remove()
                 if (summer == true) {
                     var selectedCountry = "s" + clickCountry
