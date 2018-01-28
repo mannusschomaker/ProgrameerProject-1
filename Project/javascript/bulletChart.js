@@ -1,6 +1,6 @@
 function barChart(data) {
-    // Setup svg using Bostock's margin convention
 
+    // set dimentions
     var margin = {
         top: 20,
         right: 160,
@@ -10,7 +10,7 @@ function barChart(data) {
 
     var width = 600 - margin.left - margin.right,
         height = 300 - margin.top - margin.bottom;
-
+    // select div and add svg
     var svg = d3.select("#barChart2")
         .append("svg")
         .attr("id", "topCountryBarChart")
@@ -19,16 +19,9 @@ function barChart(data) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-
-    /* Data in strings like it would be if imported from a csv */
-
-
-
-
-    // Transpose the data into layers
+    // transpose the data into layers
     var dataset = d3.layout.stack()(["Gold", "Silver", "Bronze"].map(function(medal) {
         return data.map(function(d) {
-            // console.log({x: parse(d.Country), y: +d[fruit]});
             return {
                 x: d.Country,
                 y: +d[medal]
@@ -36,8 +29,7 @@ function barChart(data) {
         });
     }));
 
-
-    // Set x, y and colors
+    // set x and y
     var x = d3.scale.ordinal()
         .domain(dataset[0].map(function(d) {
             return d.x;
@@ -52,10 +44,10 @@ function barChart(data) {
         })])
         .range([height, 0]);
 
+    // set colors
     var colors = ["#ffd700", "#c0c0c0", "#cd7f32"];
 
-
-    // Define and draw axes
+    // draw axes
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left")
@@ -78,8 +70,7 @@ function barChart(data) {
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis);
 
-
-    // Create groups for each series, rects for each segment
+    // create groups for each series, rects for each segment
     var groups = svg.selectAll("g.cost")
         .data(dataset)
         .enter().append("g")
@@ -88,22 +79,17 @@ function barChart(data) {
             return colors[i];
         });
 
+    // make bar's
     var rect = groups.selectAll("rect")
         .data(function(d) {
-          // console.log("d", d);
             return d;
         })
         .enter()
         .append("rect")
-
-        // .attr("id", function(d){
-        //   return
-        // })
-        .attr("id",function(d){
-          return d.x
+        .attr("id", function(d) {
+            return d.x
         })
         .attr("x", function(d) {
-          // console.log(d.x)
             return x(d.x);
         })
         .attr("y", function(d) {
@@ -114,43 +100,46 @@ function barChart(data) {
         })
         .attr("width", x.rangeBand())
         .on("mouseover", function() {
-          // select country id
-          mapId = d3.select(this)[0][0].id
 
-          d3.select("." + mapId).style("fill", "blue").attr("id", "highLight")
+            // select id of bar
+            mapId = d3.select(this)[0][0].id
+
+            // select country in the map and change color
+            d3.select("." + mapId).style("fill", "blue").attr("id", "highLight")
             tooltip.style("display", null);
 
-            // d3.selectAll("#tempLine").remove()
-            // d3.select("#currentGraph").remove()
-            if (summer == true){
+            // make selectedCountry based on summer/winter
+            if (summer == true) {
                 var selectedCountry = "s" + mapId
             }
-            if (summer == false){
+            if (summer == false) {
                 var selectedCountry = "w" + mapId
-          }
-          updateLine(selectedCountry)
+            }
 
+            // add dodded line to line graph
+            updateLine(selectedCountry)
         })
         .on("mouseout", function() {
+
+            // hide tooltip
             tooltip.style("display", "none");
+
+            // remove dodded line
+            d3.selectAll("#tempLine").remove()
 
             // select old color of country
             var mapFill = JSON.parse(d3.select("." + mapId).attr("data-info")).fillColor
-            d3.selectAll("#tempLine").remove()
-            // remove highLight
+
+            // set back the old c0llor
             d3.select("#highLight").style("fill", mapFill).attr("id", null)
-            // d3.select(".datamap").style("opacity",1)
         })
         .on("mousemove", function(d) {
-
+            // show tooltip next to mouse
             var xPosition = d3.mouse(this)[0] - 15;
             var yPosition = d3.mouse(this)[1] - 25;
             tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
             tooltip.select("text").text(d.y);
         });
-
-
-
 
     // Draw legend
     var legend = svg.selectAll(".legend")
@@ -185,8 +174,7 @@ function barChart(data) {
             }
         });
 
-
-    // Prep the tooltip bits, initial display is hidden
+    // prep the tooltip bits, initial display is hidden
     var tooltip = svg.append("g")
         .attr("class", "tooltip")
         .style("display", "none");
