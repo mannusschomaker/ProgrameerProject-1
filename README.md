@@ -7,27 +7,23 @@ https://github.com/minordavid/ProgrameerProject/.
 
 # Introduction
 
-we hear a lot about how top athletes are improving and about new records, however we do not fully understand
-how impressive these people are and how they compare to their predecessors. also it is nice to see how the country's
-participating in the Olympics changed, which country improved and which country's lost their golden touch
+Since it is 2018, the winter Olympics are coming up, of course a lot of people are excited for the games and are curious how their nation will do, but how did their nation do in the past compared to other country's? In this project the answer to this question is displayed for both the summer and the winter Olympics along with the history of every modern nation
 
 # Solution
-homepage
+Home page
 
-![alt text](Project/doc/Homepage.png)
+![alt text](Project/doc/prtScHomePage.png)
 
-country page
+Results page
 
-![alt text](Project/doc/country's.png)
+![alt text](Project/doc/prtScResults.png)
 
 - a website that gives a visualisation of various Olympic results through the years and the medals won by country's through the years
+- MAIN FEATURES: Interactive map of the world, graph that shows the results through the years and a interactive stacked bar chart. additionally a slider, toggle and dropdown are used
 
-- MAIN FEATURES: dropdown menu to select a sport and gender, interactive graph that shows the results through the years
-  with a tooltip.
-  a map of the world where the country's are coloured with corresponding to the amount of medals won, with a tooltip and a graph linked to it.
-  a slider can be used to update the map
+About page
 
-  *optionally the amount of people cought for using doping and which doping are represented in a graph*
+![alt text](Project/doc/prtScAbout.png)
 
 # Prerequisites
 

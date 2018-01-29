@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
+.datamap{
+  width: 100%;
+  float: left;
+  padding: 15px;
+  background: #d3eaf8;
+}
+
 .title{
   width: 100%;
   float: left;

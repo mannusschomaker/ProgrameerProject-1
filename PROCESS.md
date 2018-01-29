@@ -2,7 +2,7 @@
 mainly focussed on fixing bugs coming from DATA MAPS (map format i use). additionally i looked for how i wanted my stacked bar chart to look like
 
 # day 2
-implemented the stacked bar chart, it represents data of the top x country's of the selected year
+implemented the stacked bar chart instead of bullet chart, it represents data of the top x country's of the selected year
 ![alt text](doc/day2barchart.png)
 i have yet to decide how many country's i will represent, but i think it will be 10.
 maybe i will add a function where the country on the maps can be selected and will be added in the bar chart
@@ -40,6 +40,12 @@ the lines are between the latest and earliest time a country competed.
 
 when hovering the stacked bar chart dotted lines representing the history of that country are added in the line graph
 
-i choose to do this relative and not absolute
+i choose to do this relative and not absolute because this is more in the theme of comparison through history
 
 # day 9
+
+fixed bugs that gave some update isues
+
+# day 10
+
+finished product
