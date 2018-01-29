@@ -9,11 +9,11 @@ participating in the Olympics changed, which country improved and which country'
 # Solution
 homepage
 
-![alt text](doc/Homepage.png)
+![alt text](Project/doc/Homepage.png)
 
 country page
 
-![alt text](doc/country's.png)
+![alt text](Project/doc/country's.png)
 
 - a website that gives a visualisation of various Olympic results through the years and the medals won by country's through the years
 

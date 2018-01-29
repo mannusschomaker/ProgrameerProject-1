@@ -7,7 +7,7 @@ deze json in de vorm land{goud, zilver, brons, totaal}, land{goud, zilver, brons
 
 # diagram?
 
-![alt text](doc/Diagram.png)
+![alt text](Project/doc/Diagram.png)
 
 # components
 
