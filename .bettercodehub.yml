@@ -1,3 +1,6 @@
+languages:
+- javascript
+- python
 exclude:
-
-- .*/Project/javascript/map\.js
+- /Project/javascript/map.js
+- /Project/makeData.py
