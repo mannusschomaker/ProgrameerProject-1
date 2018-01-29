@@ -72,7 +72,6 @@ window.onload = function() {
 
             // update
             updateMap(currentYear)
-
         })
 
     // update the bars
