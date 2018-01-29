@@ -32,16 +32,16 @@
 			<a href="homepage.html">Home</a> <a href="results.html">Results</a> <a href="about.html">About</a>
 		</div>
 	</div>
+
 	<div class="map">
-		<label class="switchWS"><input id="togBtnWS" onclick="boxUpdate()" type="checkbox"></label>
-		<div class="sliderWS round">
-			<label class="switchWS"><!--ADDED HTML --><span class="on">Winter</span><span class="off">Summer</span><!--END--></label>
-		</div><span id="checker" style="display:none"></span>
-		<div id="container" style="position: relative; width: 100%; height: 600px;"></div>
-		<div class="slidecontainer">
-			<input class="slider" id="summerSlider" max="27" min="0" type="range" value="26"> <input class="slider" id="winterSlider" max="22" min="0" style="display:none" type="range" value="21">
-			<h2>Year of olympics: <span id="demo"></span></h2>
-		</div>
+		 <label class="switchWS"><input type="checkbox" id="togBtnWS" onclick="boxUpdate()"><div class="sliderWS round"><!--ADDED HTML --><span class="on">Winter</span><span class="off">Summer</span><!--END--></div></label>
+		 <span id="checker" style="display:none"></span>
+		 <div id="container" style="position: relative; width: 100%; height: 600px;"></div>
+		 <div class="slidecontainer">
+				<input type="range"  min="0" max="27" value="26" class="slider" id="summerSlider">
+				<input type="range" min="0" max="22" value="21" class="slider" id="winterSlider" style="display:none">
+				<h2>Year of olympics: <span id="demo"></span></h2>
+		 </div>
 	</div>
 	<div class="barChart">
 		<div class="dropdown1">
