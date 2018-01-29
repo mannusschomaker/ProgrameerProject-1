@@ -1,5 +1,5 @@
 # (Short) Description
-Since it is 2018 the winter Olympics are coming up, of course a lot of people are excited for the games and are curious how their nation will do, but how did their nation do in the past compared to other country's? In this project the answer to this question is displayed for both the summer and the winter Olympics along with the history of every modern nation
+Since it is 2018, the winter Olympics are coming up, of course a lot of people are excited for the games and are curious how their nation will do, but how did their nation do in the past compared to other country's? In this project the answer to this question is displayed for both the summer and the winter Olympics along with the history of every modern nation
 ![alt text](Project/doc/screenshot.png)
 
 # Technical Design

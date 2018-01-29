@@ -1,12 +1,7 @@
 * {
     box-sizing: border-box;
 }
-/* .datamap { } */
-/* #currentGraph{
-  width: 100%;
-  float: left;
-} */
-.datamap{
+.title{
   width: 100%;
   float: left;
   padding: 15px;
