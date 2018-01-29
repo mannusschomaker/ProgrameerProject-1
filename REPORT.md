@@ -21,7 +21,7 @@ In the begin it was challenging to work with the Datamaps, but eventually I figu
 
 being able to display the right year for summer and winter Olympics as well as always displaying the right data when a toggle, slider or dropdown was used was not challenging in the sense that is was very hard, but that it was a lot of trial and error.
 
-one of the hardest challenges was to make a json with a varying key (json:{{USA:{Fill:...}, CAN:{Fill:...}, CHN:{Fill:...}}}).
+one of the hardest challenges was to make a json with a varying key "(json:{{USA:{Fill:...}, CAN:{Fill:...}, CHN:{Fill:...}}})".
 
 Instead of making a bullet chart i decided to make a stacked bar chart, I did this because a stacked bar chart was a better match for my data than a bullet chart. A bullet chart is very useful to compare very different types of data, for example when you want to compare percentages with absolute numbers, or when comparing decimals with number of 10*5. My data was in the same realm of numbers therefor I choose to use a stacked bar chart.
 

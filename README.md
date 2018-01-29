@@ -1,6 +1,11 @@
+This project is licensed under the terms of the MIT license.
+
+/Project/javascript/map.js is licensed by Mark DiMarco (https://github.com/markmarkoh) under the terms of MIT license. (https://datamaps.github.io/)
+
+# github Pages
 https://github.com/minordavid/ProgrameerProject/.
 
-https://github.com/minordavid/ProgrameerProject/blob/master/results.html
+# Introduction
 
 we hear a lot about how top athletes are improving and about new records, however we do not fully understand
 how impressive these people are and how they compare to their predecessors. also it is nice to see how the country's
