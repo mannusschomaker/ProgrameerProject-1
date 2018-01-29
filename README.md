@@ -49,6 +49,8 @@ staying sane when the code does not work
 I think the scraping/getting data will take a lot of time
 the hardest part will be linking the dropdown menus with the graph and the slider with the map and the map with the graph
 
-# bettercodehub
+# Sturcture Repository
+
+# Bettercodehub
 
 [![BCH compliance](https://bettercodehub.com/edge/badge/minordavid/ProgrameerProject?branch=master)](https://bettercodehub.com/)

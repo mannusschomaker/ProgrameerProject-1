@@ -1,14 +1,14 @@
+// set the dimensions
+var margin = {
+        top: 30,
+        right: 20,
+        bottom: 30,
+        left: 50
+    },
+    width = 550 - margin.left - margin.right,
+    height = 270 - margin.top - margin.bottom;
+    
 function lineGraph(selectedCountry) {
-
-    // set the dimensions
-    var margin = {
-            top: 30,
-            right: 20,
-            bottom: 30,
-            left: 50
-        },
-        width = 550 - margin.left - margin.right,
-        height = 270 - margin.top - margin.bottom;
 
     // set the ranges
     var x = d3.time.scale().range([0, width]);
@@ -114,16 +114,6 @@ function lineGraph(selectedCountry) {
 }
 
 function updateLine(selectedCountry) {
-
-    // set margins
-    var margin = {
-            top: 30,
-            right: 20,
-            bottom: 30,
-            left: 50
-        },
-        width = 600 - margin.left - margin.right,
-        height = 270 - margin.top - margin.bottom;
 
     // set the ranges
     var x = d3.time.scale().range([0, width]);
