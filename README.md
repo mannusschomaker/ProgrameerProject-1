@@ -28,15 +28,15 @@ About page
 # Prerequisites
 
 - Data scource:
-Data: https://www.theguardian.com/sport/datablog/2012/jun/25/olympic-medal-winner-list-data#data
-eerste plek op spelen: https://www.olympic.org/olympic-results data moet waarschijnlijk gescraped worden
-medal table: https://en.wikipedia.org/wiki/2016_Summer_Olympics_medal_table scrapen of met excel
+summer olympics:
+https://en.wikipedia.org/wiki/2016_Summer_Olympics_medal_table
+winter olympics:
+https://en.wikipedia.org/wiki/2014_Winter_Olympics_medal_table
 
-  doping: https://en.wikipedia.org/wiki/Doping_at_the_Olympic_Games scrapen of met excel
-  doping: https://sportsanddrugs.procon.org/view.resource.php?resourceID=004420 with hand
+change 2016/2014 into desired year
 
 - external components:
-d3 tip needs to be used and maybe a library for maps
+bootstrap
 
 - similar:
 there is a site that represents the medals won by country's over years, but this one uses bubles and is not interactive, also there
