@@ -3,7 +3,7 @@ This project is licensed under the terms of the MIT license.
 /Project/javascript/map.js is licensed by Mark DiMarco (https://github.com/markmarkoh) under the terms of MIT license. (https://datamaps.github.io/)
 
 # github Pages
-https://github.com/minordavid/ProgrameerProject/.
+https://minordavid.github.io/ProgrameerProject/.
 
 # Introduction
 
